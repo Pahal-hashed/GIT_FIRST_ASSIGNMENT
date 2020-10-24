@@ -243,12 +243,6 @@
     		<artifactId>cobertura-maven-plugin</artifactId>
     		<version>2.7</version>
     		<scope>test</scope>
-			<exclusions>
-            			<exclusion>
-                		<artifactId>tools</artifactId>
-                		<groupId>com.sun</groupId>
-            		</exclusion>
-        		</exclusions>
 		</dependency>
 
 		<!-- XML -->
