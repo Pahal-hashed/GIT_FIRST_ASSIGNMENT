@@ -132,45 +132,21 @@
 	<groupId>log4j</groupId>
 	<artifactId>log4j</artifactId>
 	<version>1.2.9</version>
-			<exclusions>
-            			<exclusion>
-                		<artifactId>tools</artifactId>
-                		<groupId>com.sun</groupId>
-            		</exclusion>
-        		</exclusions>
 </dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.7.7</version>
-			<exclusions>
-            			<exclusion>
-                		<artifactId>tools</artifactId>
-                		<groupId>com.sun</groupId>
-            		</exclusion>
-        		</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
 			<version>1.7.7</version>
-			<exclusions>
-            			<exclusion>
-                		<artifactId>tools</artifactId>
-                		<groupId>com.sun</groupId>
-            		</exclusion>
-        		</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.7</version>
-			<exclusions>
-            			<exclusion>
-                		<artifactId>tools</artifactId>
-                		<groupId>com.sun</groupId>
-            		</exclusion>
-        		</exclusions>
 		</dependency>
 
 				<!-- TESTING -->
@@ -179,12 +155,6 @@
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
-			<exclusions>
-            			<exclusion>
-                		<artifactId>tools</artifactId>
-                		<groupId>com.sun</groupId>
-            		</exclusion>
-        		</exclusions>
 		</dependency>
 
 
@@ -193,24 +163,12 @@
 			<groupId>commons-httpclient</groupId>
 			<artifactId>commons-httpclient</artifactId>
 			<version>3.1</version>
-			<exclusions>
-            			<exclusion>
-                		<artifactId>tools</artifactId>
-                		<groupId>com.sun</groupId>
-            		</exclusion>
-        		</exclusions>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.1</version>
-			<exclusions>
-            			<exclusion>
-                		<artifactId>tools</artifactId>
-                		<groupId>com.sun</groupId>
-            		</exclusion>
-        		</exclusions>
 		</dependency>
 
 		<!-- JSON -->
@@ -218,23 +176,11 @@
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>20140107</version>
-			<exclusions>
-            			<exclusion>
-                		<artifactId>tools</artifactId>
-                		<groupId>com.sun</groupId>
-            		</exclusion>
-        		</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-jaxrs</artifactId>
 			<version>1.9.4</version>
-			<exclusions>
-            			<exclusion>
-                		<artifactId>tools</artifactId>
-                		<groupId>com.sun</groupId>
-            		</exclusion>
-        		</exclusions>
 		</dependency>
 
 	    	<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/cobertura-maven-plugin -->
@@ -242,21 +188,21 @@
     		<groupId>org.codehaus.mojo</groupId>
     		<artifactId>cobertura-maven-plugin</artifactId>
     		<version>2.7</version>
-    		<scope>test</scope>
-		</dependency>
-
-		<!-- XML -->
-		<!--dependency>
-			<groupId>com.sun.xml.security</groupId>
-			<artifactId>xml-security-impl</artifactId>
-			<version>1.0</version>
 			<exclusions>
             			<exclusion>
                 		<artifactId>tools</artifactId>
                 		<groupId>com.sun</groupId>
-            		</exclusion>
+            			</exclusion>
         		</exclusions>
-		</dependency-->
+    		<scope>test</scope>
+		</dependency>
+
+		<!-- XML -->
+		<dependency>
+			<groupId>com.sun.xml.security</groupId>
+			<artifactId>xml-security-impl</artifactId>
+			<version>1.0</version>
+		</dependency>
 	    
 	</dependencies>
 
